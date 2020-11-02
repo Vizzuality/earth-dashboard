@@ -1,0 +1,70 @@
+@import 'css/settings';
+
+.homepage {
+    height: 100vh;
+    width: 100%;
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        z-index: 2;
+
+        h1 {
+            color: $white;
+            font-size: 48px;
+            font-family: 'Barlow Condensed';
+        }
+        h5 {
+            color: $grey;
+            font-size: 18px;
+            font-family: 'Barlow Regular';
+            max-width: 520px;
+        }
+        .highlighted-text {
+            padding-right: $space;
+            font-style: italic;
+            background-color: $grey;
+            color: $black;
+        }
+
+        .topic-links {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 520px;
+
+            >a {
+                color: $white;
+                border-bottom: solid 2px;
+                text-decoration: none;
+                font-family: 'Barlow Condensed';
+                font-size: 20px;
+            }
+
+            .climate-link {
+                border-color: $climate;
+            }
+            .forests-link {
+                border-color: $forests;
+            }
+            .freshwater-link {
+                border-color: $freshwater;
+            }
+            .oceans-link {
+                border-color: $oceans;
+            }
+        }
+    }
+
+    .particles {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+}

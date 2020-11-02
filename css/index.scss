@@ -1,0 +1,72 @@
+// Reset
+// Project settings (it doesn't include Grid system)
+@import "settings";
+
+@import "../node_modules/normalize.css/normalize";
+
+// Libraries
+@import '../node_modules/react-progress-2/main';
+@import '../node_modules/react-redux-toastr/src/styles/index';
+@import '../node_modules/react-input-range/src/scss/index.scss';
+@import '../node_modules/vizzuality-components/dist/bundle';
+
+// Common files
+@import "base";
+@import "helpers";
+@import "mixins";
+@import "layouts/container",
+  "layouts/page",
+  "layouts/error",
+  "layouts/section",
+  "layouts/content",
+  "layouts/postcontent",
+  "layouts/row",
+  "layouts/footer",
+  "layouts/sidebar",
+  "layouts/static";
+
+// Components
+// UI
+
+@import "./components/ui/button";
+@import "./components/ui/button-container";
+@import "./components/ui/card";
+@import "./components/ui/legend";
+@import "./components/ui/icon";
+@import "./components/ui/custom_select";
+@import "./components/ui/markdown";
+@import "./components/ui/table_tooltip";
+@import "./components/ui/rc-tooltip";
+@import "./components/ui/rc-pagination";
+@import "./components/ui/table";
+@import "./components/ui/sortable-row";
+
+// Map
+@import "./components/map/map";
+@import './components/map/map-side-by-side-layout';
+@import './components/map/map-side-by-side-range';
+
+// Form
+@import "./components/form/form";
+@import "./components/form/field";
+@import "./components/form/field-container";
+@import "./components/form/radio";
+@import "./components/form/select";
+
+// ================== ADMIN ======================
+
+// Widgets
+@import "./components/admin/widget/chart";
+@import "./components/admin/widget/widget_chart";
+
+// ================== APP =====================
+
+// Embed
+@import "./components/app/pages/embed/embed_widget";
+
+// Foundation:
+// We are using this library only for grid system
+@import '../node_modules/foundation-sites/scss/foundation';
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+@include foundation-responsive-embed;

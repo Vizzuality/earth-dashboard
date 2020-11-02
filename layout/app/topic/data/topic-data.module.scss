@@ -1,0 +1,48 @@
+@import 'css/settings';
+
+.topic-data {
+    position: relative;
+
+    .logo-container {
+        position: absolute;
+        top: 3 * $space;
+        left: 5 * $space;
+        cursor: pointer;
+        z-index: 4;
+    }
+
+    .navigation-dots {
+        position: fixed;
+        width: 100vh;
+        transform-origin: left top;
+        transform: rotate(-90deg) translate(-100%, calc(100vw - 60px));
+        z-index: 9999;
+    }
+
+    .headline-section {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .challenge-to-our-global-commons-section {
+    }
+
+    .dive-into-the-data-section {
+        padding: 115px 110px 115px 110px;
+    }
+
+    .change-agents-section {
+        padding: 120px 135px 120px 135px;
+
+        h2 {
+            font-style: italic;
+            color: $white;
+        }
+
+        .coming-soon {
+            color: $black;
+            font-style: normal;
+            margin-left: 3 * $space;
+        }
+    }
+}

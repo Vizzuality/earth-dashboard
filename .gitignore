@@ -1,0 +1,30 @@
+# Mac OS
+.DS_Store
+
+# Text editors
+*.sublime*
+.sublime*
+.vscode*
+
+# Vendors
+/node_modules
+
+# Logs
+*.log*
+
+# Compiled files
+/dist
+.next
+.yalc
+/build
+# Images added at build time
+static/images/widget-editor
+
+# Next files
+.next
+
+# Ignore environment variables
+.env
+
+# Don't upload npm lock file
+package-lock.json
